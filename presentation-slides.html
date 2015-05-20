@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dell Cloud Manager</title>
+    <meta charset='utf-8'>
+    <meta content='width=1024, user-scalable=no' name='viewport'>
+    <!-- deck.js's core css -->
+    <link href="deck.js/core/deck.core.css" rel="stylesheet" type="text/css"/>
+    <!-- deck.js extension CSS files -->
+    <link href="deck.js/extensions/codemirror/deck.codemirror.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/goto/deck.goto.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/hash/deck.hash.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/menu/deck.menu.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/navigation/deck.navigation.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/scale/deck.scale.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/status/deck.status.css" rel="stylesheet" type="text/css"/>
+    <!-- all css in the css dir: Keydown CSS, your custom CSS, and themes from deck.js -->
+    <link href="css/keydown.css" rel="stylesheet" type="text/css"/>
+    <link href="css/dcm_overview.css" rel="stylesheet" type="text/css"/>
+    <link href="css/default.css" rel="stylesheet" type="text/css"/>
+    <link href="css/horizontal-slide.css" rel="stylesheet" type="text/css"/>
+    <link href="css/swiss.css" rel="stylesheet" type="text/css"/>
+    <!-- Modernizr (provided for legacy browsers) -->
+    <script src="deck.js/support/modernizr.custom.js" type="text/javascript"></script>
+  </head>
+  <body class='deck-container keydown'>
+    <section class='blue_background full-background left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        
+        
+        <table style="width:auto%;">
+        <tr><td style="text-align:left !IMPORTANT;"><img src="images/dcm_logo.png" /></td><td>&nbsp;&nbsp;</td><td style="text-align:left !IMPORTANT;"><h1 style="font-weight:bold !IMPORTANT;color:white !IMPORTANT;">
+        Dell Cloud Manager
+        </h1></td></tr>
+        </table>
+        
+        
+        <p><br />
+        <br />
+        <br /></p>
+        
+        <h2 style="font-weight:bold !IMPORTANT;color:black !IMPORTANT;">Overview</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Agenda</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Overview</strong></li>
+        <li><strong>Console Walk-through</strong></li>
+        <li><strong>Managing your user account</strong></li>
+        <li><strong>Managing Servers, Images, Volumes and Snapshots</strong></li>
+        <li><strong>Managing Networks, Firewalls, Load Balancers and IP Addresses</strong></li>
+        <li><strong>Dell Cloud Manager Agent</strong></li>
+        <li><strong>Configuration Management Integration</strong></li>
+        <li><strong>Jobs</strong></li>
+        <li><strong>Users, Groups and Roles</strong></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Overview</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>What is Dell Cloud Manager</strong></li>
+        <li><strong>Benefits of Dell Cloud Manager</strong></li>
+        <li><strong>Supported Clouds</strong></li>
+        <li><strong>Security (Users, Groups, Roles and Access Rights)</strong></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>What is Dell Cloud Manager</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Dell Cloud Manager is a suite of tools that enables deployment and management of your enterprise applications across most major public and private clouds.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Provisioning</strong> tools for preparing servers with appropriate operating systems, software, applications and data to make them ready and available for consumption.</li>
+        <li><strong>Management</strong> tools for managing your cloud resources (images, servers, volumes, networks, firewalls).</li>
+        <li><strong>Access and Budget Control</strong> tools for managing user access to cloud resources, budget quotas.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Dell Cloud Manager consists of these core components:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>Dell Cloud Manager <strong>Server</strong></li>
+        <li>Dell Cloud Manager <strong>Console</strong></li>
+        <li>Dell Cloud Manager <strong>Agent</strong></li>
+        <li>Dell Cloud Manager <strong>API</strong></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Benefits of Dell Cloud Manager</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p><strong>Enables self-service provisioning of cloud resources on supported clouds through a single user ID using the console or API.</strong></p></li>
+        <li><p><strong>Watches over your cloud resources and account state, monitoring public, private or hybrid cloud environments for changes.</strong></p></li>
+        <li><p><strong>Dell Cloud Manager provides </strong>agility<strong>, </strong>governance<strong> and </strong>choice<strong> for managing your cloud infrastructure.</strong></p>
+        
+        <ul>
+        <li><p><strong>Agility</strong> -  helps realize the economic and operational advantages of cloud computing, providing consistency across cloud platforms and enables improved service levels.</p></li>
+        <li><p><strong>Governance</strong> - provides access controls including encryption, advanced user authentication, and budget management. This ensures appropriate level of access to your cloud environment.</p></li>
+        <li><p><strong>Choice</strong> - support for all leading public and private cloud platforms, including access to configuration management tools, DCM offers a unified management solution for your single or multi-cloud environment.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Dell Cloud Manager is available as software-as-a-service (SaaS) or can be installed and run on-premise.</strong></p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Supported Clouds</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Partner Clouds</strong><sup>*</sup></p>
+        
+        <ul>
+        <li><strong>Amazon Web Services</strong></li>
+        <li><strong>Google Compute</strong></li>
+        <li><strong>Joyent Cloud</strong></li>
+        <li><strong>Microsoft Azure</strong></li>
+        <li><strong>ScaleMatrix</strong></li>
+        </ul>
+        
+        
+        <p><strong>Supported Clouds</strong></p>
+        
+        <ul>
+        <li><strong>Bluelock</strong></li>
+        <li><strong>CloudCentral</strong></li>
+        <li><strong>Citrix CloudStack</strong></li>
+        <li><strong>CloudSigma</strong></li>
+        <li><strong>Dell</strong></li>
+        <li><strong>Dimension Data</strong></li>
+        <li><strong>Eucalyptus</strong></li>
+        <li><strong>HP Cloud Services</strong></li>
+        <li><strong>OpenStack</strong></li>
+        <li><strong>Rackspace</strong></li>
+        <li><strong>Red Hat</strong></li>
+        <li><strong>Terremark</strong></li>
+        <li><strong>VMware vSphere</strong></li>
+        <li><strong>VMware vCloud Express</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <p><sup>*</sup> Dell maintains a reseller agreement with partner clouds and partner clouds get prioritized features and support.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Security - Users, groups, roles, and access rights</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p><strong>Users</strong> are linked with each individual that logs in to Dell Cloud Manager.</p>
+        
+        <ul>
+        <li><p>Users can belong to one or multiple groups.</p></li>
+        <li><p>If a user has multiple group memberships, their access rights are the <em>union</em> of all the access rights for all groups to which the user belongs.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Groups</strong> are the fundamental user organizational unit of Dell Cloud Manager.</p>
+        
+        <ul>
+        <li><p>A group is associated with a single role for each cloud provider account.</p></li>
+        <li><p>A group can have different roles on different cloud provider accounts.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Roles</strong> are the set of permissions called <strong>access rights</strong> that control user access and actions to cloud resources.</p>
+        
+        <ul>
+        <li>A user inherits the access rights associated with the role of the group to which they belong.</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Console Walk-through</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Walk-Through (U/I)</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Dell Cloud Manager Menus:</strong></h3>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Home</strong></li>
+        <li><strong>Deployed</strong></li>
+        <li><strong>Design</strong></li>
+        <li><strong>Networking</strong></li>
+        <li><strong>Storage &amp; Backup</strong></li>
+        <li><strong>Users &amp; Accounts</strong></li>
+        <li><strong>Budgets &amp; Reports</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h3><strong>Additional Menus:</strong></h3>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><em>User Settings</em></li>
+        <li><em>Company Settings</em></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Note: User access rights govern the appearance/options present for each menu in the user interface.</strong></h4>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Home</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img style="float:left;" src="images/console_02.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Home Menu</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Dashboard:&nbsp;</th><td>Main Dashboard Page</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Deployed</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Deployed Resources</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_03.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Deployed Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Servers:&nbsp;</th><td>Manage deployed Servers (Start, Pause, Terminate, Launch, Make Image...)</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Design</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Machine Images</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_04.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Design Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Machine Images:&nbsp;</th><td>Manage Machine Images (Search, Launch Server, Delete...)</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Networking</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Network Resources</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_05.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Networking Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Networks:&nbsp;</th><td>Manage Networks and Subnets(Create, Remove...)</td></tr>
+        <tr><th style="text-align:left;">IP Addresses:&nbsp;</th><td>Manage Public IP Addresses (Reserve, Assign, Release...)</td></tr>
+        <tr><th style="text-align:left;">Firewalls:&nbsp;</th><td>Manage Firewalls and Rules (Create, Remove Firewalls and Rules...)</td></tr>
+        <tr><th style="text-align:left;">Load Balancers:&nbsp;</th><td>Manage Load Balancers (Create, Remove Load Balancers and Port Forwarding Rules...)</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Storage &amp; Backup</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Data Volumes and Snapshots</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_06.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Storage & Backup Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Volumes:&nbsp;</th><td>Manage Volumes (Create, Remove, Attach, Detach, Snapshot...)</td></tr>
+        <tr><th style="text-align:left;">Snapshots:&nbsp;</th><td>Manage Snapshots (Remove, Create Volume...)</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Users &amp; Accounts</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Users, Groups and Roles, Cloud and Configuration Management Accounts</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_07.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Users & Accounts Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">User Access:&nbsp;</th><td>Manage Users, Groups and Roles (Add, Edit, Remove, Assign...)</td></tr>
+        <tr><th style="text-align:left;">Cloud Accounts:&nbsp;</th><td>Manage Cloud Accounts (Connect, Remove, Edit Credentials...)</td></tr>
+        <tr><th style="text-align:left;">Configuration Management Accounts:&nbsp;</th><td>Manage Configuration Management Accounts (Connect, Remove, View Resources...)</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Budgets &amp; Reports</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Budgets and View Reports</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_08.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Budgets & Reports Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Budget Management:&nbsp;</th><td>Manage Budgets (Create, Edit, Deactivate, Assign Quotas...)</td></tr>
+        <tr><th style="text-align:left;">Reports:&nbsp;</th><td>View Usage Reports by Resource, User, Group or Budget</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>User Settings</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Personal User Settings</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_09.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">User Settings Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Your Settings:&nbsp;</th><td>Edit your name, Add SSH Public Key and Windows RDP Password</td></tr>
+        <tr><th style="text-align:left;">Logout&nbsp;</th><td></td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1><strong>Cog</strong> Menu</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Manage Other General Settings</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/console_10.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Cog Menu options</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Company Settings:&nbsp;</th><td>Edit Company Name, Currency, Exchange Rates and Pricing Plan</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Managing your user account</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Managing your user account</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Basic Information</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/user_account_mgmt_01.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Basic Information</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">Email:&nbsp;</th><td>Dell Cloud Manager userid. Cannot be changed.</td></tr>
+        <tr><th style="text-align:left;">First Name</th></tr>
+        <tr><th style="text-align:left;">Last Name</th></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Managing your user account</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Credentials</strong></h3>
+        
+        <table style="width:100%;" cols="03">
+        <tr>
+        <td><img src="images/user_account_mgmt_02.png" height="1050" width="1200"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td><h5 style="color:white !IMPORTANT;">
+        <table style="white-space:nowrap;">
+        <caption style="text-align:left;"><h4 style="font-size:larger;font-weight:bold;color:white !IMPORTANT;">Credentials</h4></caption>
+        <tr><th style="text-align:left;">&nbsp;</th></tr>
+        <tr><th style="text-align:left;">SSH Public Key:&nbsp;</th><td>Your public key</td></tr>
+        <tr><th style="text-align:left;">Windows Password:&nbsp;</th><td>Your password to connect to windows hosts</td></tr>
+        </table>
+        </h5>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>User account settings</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Basic Information</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p><strong>Email</strong> - Dell Cloud Manager userid. Cannot be changed.</p>
+        
+        <ul>
+        <li>Also used as the target for "general" emails to the user related to user profile changes.</li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Credentials</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p><strong>SSH Public Key</strong> - specifying a public key in a user profile allows for DCM agent-facilitated user account creation on unix servers</p></li>
+        <li><p><strong>Windows Password</strong> - specifying an RDP password in a user profile allows for DCM agent-facilitated user account creation on windows servers</p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>User account settings - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Generate an ssh public key</strong></h4>
+        
+        <ul>
+        <li>The process varies by platform, for example:
+        
+        <ul>
+        <li><strong>Linux</strong>
+        
+        <ul>
+        <li><code>mkdir ~/.ssh</code></li>
+        <li><code>chmod 700 ~/.ssh</code></li>
+        <li><code>ssh-keygen -t rsa</code></li>
+        <li><code>cat ~/.ssh/id_rsa.pub</code></li>
+        </ul>
+        </li>
+        <li><strong>Windows (puttygen)</strong>
+        
+        <ul>
+        <li>Download puttygen from http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Edit your user settings</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p>In DCM, click your user name and select the <strong>Your Settings</strong> option</p>
+        
+        <ul>
+        <li>View your email address, and name</li>
+        </ul>
+        </li>
+        <li><p>Click the <strong>Credentials</strong> tab</p>
+        
+        <ul>
+        <li>Input your ssh public key generated above</li>
+        <li>Input a strong windows password</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Compute</h1>
+        
+        <p></p>
+        
+        
+        <h1><strong>Managing Servers, Images, Volumes and Snapshots</strong></h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Servers, Machine Images, Volumes and Snapshots</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Dell Cloud Manager allows a user with the necessary Access Rights the ability to create and manage Cloud resources: Servers, Machine Images, Volumes and Snapshots.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p><strong>Servers</strong></p>
+        
+        <ul>
+        <li>A Server is a virtual machine running in a cloud.</li>
+        <li>Servers contain your applications, web servers, database servers, etc.</li>
+        <li>Dell Cloud Manager monitors Servers in each associated cloud account.</li>
+        </ul>
+        </li>
+        <li><p><strong>Machine Images</strong></p>
+        
+        <ul>
+        <li>A Machine Image is a saved template of a server.</li>
+        <li>Servers are launched from machine images.</li>
+        <li>Create and customize images containing applications, web servers, database servers, etc.</li>
+        </ul>
+        </li>
+        <li><p><strong>Volumes</strong></p>
+        
+        <ul>
+        <li>A Volume represents block storage.</li>
+        <li>Volumes can be used to store persistent data in the cloud.</li>
+        <li>Volumes can be detached and attached to other servers to recover from failures. (Some restrictions apply)</li>
+        </ul>
+        </li>
+        <li><p><strong>Snapshots</strong></p>
+        
+        <ul>
+        <li>A Snapshot is a Backup of a Volume.</li>
+        <li>A Snapshot can can be used to create a duplicate Volume.</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Servers</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Servers page displays the active and inactive servers.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All servers across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The server list is sortable and filterable.</li>
+        <li>Multiple servers can be controlled by selecting the check boxes and using the Control Server dropdown menu.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Deploy a Server</strong> - Start the Launch server wizard</li>
+        <li><strong>View Information</strong> - Display additional information about a server (Uptime, IP Addresses, Owner, Product Type, Base Image, Volumes, Network, Firewall)</li>
+        <li><strong>View Logs</strong> - display the DCM agent Log for a server</li>
+        <li><strong>Make Image</strong> - make machine image from a running server</li>
+        <li><strong>User Management</strong> - create an account on a running server using the SSH/Windows credentials in the user’s profile</li>
+        <li><strong>Reboot</strong> - reboot a runnng server</li>
+        <li><strong>Stop</strong> - pause a running server</li>
+        <li><strong>Start</strong> - start a paused server</li>
+        <li><strong>Terminate</strong> - stop a server and destroy it</li>
+        <li><strong>Attach Volume</strong> - attach a volume to a running server</li>
+        <li><strong>Attach IP Address</strong> - attach a static public IP address to a server</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>If the Dell Cloud Manager agent is not installed on a server, the actions available are limited to getting information, rebooting, pausing/starting, or terminating the server.</strong></h4>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Servers</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Start a paused server</strong>
+        <img src="images/start_server.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Servers</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Display Server Information</strong>
+        <img src="images/server_information.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Images</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Machine Images page displays all available images.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All machine images across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The machine image list is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>View Information</strong> - display additional information about a machine image</li>
+        <li><strong>Search</strong> - search for other images in the Cloud</li>
+        <li><strong>Launch</strong> - launch an image (starts a server machine)</li>
+        <li><strong>Remove</strong> - delete an image from the cloud</li>
+        <li><strong>Deprecate</strong> - deprecate an image to prevent it from being launched and used in a new deployment</li>
+        <li><strong>Register DCM Agent</strong> - tells DCM that a machine image has the agent pre-installed (note that it doesn't automatically install the agent)</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Images</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Launch server from a machine image</strong>
+        <img src="images/image_launch.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Volumes</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Volumes page displays all available volumes</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All volumes across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The volume list is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>View Information</strong> - display additional information about a volume</li>
+        <li><strong>Deploy New Volume</strong> - create a new volume</li>
+        <li><strong>Make Snapshot</strong> - take a Snapshot (backup) of a volume</li>
+        <li><strong>Attach</strong> - attach a volume to a running server</li>
+        <li><strong>Remove</strong> - delete a volume</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Volumes</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Deploy New Volume</strong>
+        <img src="images/volume_deploy.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Snapshots</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Snapshots page displays all volume snapshots.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All snapshots across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The snapshot list is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>View Information</strong> - display additional information about a snapshot</li>
+        <li><strong>Create Volume</strong> - create a new Volume from a Snapshot</li>
+        <li><strong>Remove</strong> - delete a Snapshot</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Snapshots</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Create a volume from a snapshot</strong>
+        <img src="images/snapshot_create_volume.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Compute - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Launch a server</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Design > Machine Images</strong></li>
+        <li>On the <strong>Search Public Library</strong> tab, search for the following Image
+          *ubuntu/images/ebs/ubuntu-precise-12.04-amd64-server-20140717</li>
+        <li>Click <strong>Launch</strong></li>
+        <li>Provide the following information:
+        
+        <ul>
+        <li>Server Name</li>
+        <li>Budget</li>
+        <li>Product - m1.small</li>
+        </ul>
+        </li>
+        <li>On the <strong>Create Keys</strong> tab, click to <strong>Generate a new key pair</strong> (or select an existing pair if you have already created one)
+        
+        <ul>
+        <li>Record the key, you will not be able to retrieve this value later.</li>
+        </ul>
+        </li>
+        <li>On the <strong>Manage Volumes</strong> tab, click <strong>Create</strong> and select the following
+        
+        <ul>
+        <li>Volume product - standard</li>
+        <li>Capacity - 1Gb
+        *Click <strong>Deploy Server</strong></li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Log on to the new server</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Deployed > Servers</strong></li>
+        <li>Use the filters to find your server in the list and click the <strong>View More</strong> button</li>
+        <li>Review the server's attributes using the Details, Product, Image... tabs</li>
+        <li>Locate the IP address and log on using the key pair generated above</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Confirm the volume is attached</strong></h4>
+        
+        <ul>
+        <li>Issue <code>fdisk -l</code> as root and note the deviceID</li>
+        <li>Format and mount the volume
+        
+        <ul>
+        <li><code>mkfs.ext3 /dev/deviceID</code></li>
+        <li><code>mkdir /mnt/services</code></li>
+        <li><code>mount /dev/deviceID /mnt/services</code></li>
+        </ul>
+        </li>
+        <li>Create a new file on the volume
+        
+        <ul>
+        <li><code>touch /mnt/services/test.txt</code></li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Snapshot the volume</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Storage &amp; Backups > Volumes</strong> and locate the volume</li>
+        <li>Click <strong>Make Snapshot</strong></li>
+        <li>Provide a Name and Description and click <strong>Snapshot Volume</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Create a volume from the snapshot</strong></h4>
+        
+        <ul>
+        <li>Switch to <strong>Storage &amp; Backups > Snapshots</strong></li>
+        <li>Once the snapshot has been completed, click the snapshot and select <strong>Create Volume</strong>. Supply the following information:
+        
+        <ul>
+        <li>Name</li>
+        <li>Description</li>
+        <li>Zone - The same zone as the server is running in</li>
+        <li>Type - Standard</li>
+        <li>Size - 1Gb</li>
+        </ul>
+        </li>
+        <li>Click <strong>Create Volume</strong>, switch back to the <strong>Volumes</strong> page and wait for the volume to finish.</li>
+        <li>Highlight the volume and click <strong>Attach</strong>
+        
+        <ul>
+        <li>Select the server from the list and click <strong>Attach Volume</strong></li>
+        </ul>
+        </li>
+        <li>On the server, rescan the scsi bus to detect the new volume, and mount it to a different directory, do <strong>not</strong> format it
+        
+        <ul>
+        <li><code>mkdir /mnt/services_2</code></li>
+        <li><code>mount /dev/deviceID /mnt/services_2</code></li>
+        </ul>
+        </li>
+        <li>Confirm that the test.txt file exists on the new volume
+        
+        <ul>
+        <li><code>ls -l /mnt/services_2</code></li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Tidy up</strong></h4>
+        
+        <ul>
+        <li>Terminate the server by going to <strong>Deployed > Servers</strong>, find the server, then <strong>Control Server > Terminate</strong>.</li>
+        <li>Note that terminating the server does not destroy attached volumes or associated snapshots.
+        
+        <ul>
+        <li>Return to the Volumes and Snapshots pages and remove them.</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Network</h1>
+        
+        <p></p>
+        
+        
+        <h1><strong>Managing Networks, Firewalls, Load Balancers and IP Addresses</strong></h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Networks, Firewalls, Load Balancers and IP Addresses</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Dell Cloud Manager allows a user with the necessary Access Rights the ability to create and manage Network resources: Networks, Firewalls, Load Balancers and IP Addresses.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p><strong>Networks</strong></p>
+        
+        <ul>
+        <li>Create and manage your own virtual networks in the cloud (virtual private clouds) for isolation and increased security.</li>
+        <li>Create public and private subnets in the virtual networks.</li>
+        <li>Launch your servers in the virtual network subnets.</li>
+        </ul>
+        </li>
+        <li><p><strong>Firewalls</strong></p>
+        
+        <ul>
+        <li>Create and manage Firewalls which control access to running servers.</li>
+        </ul>
+        </li>
+        <li><p><strong>Load Balancers</strong></p>
+        
+        <ul>
+        <li>Create and manage load balancers to balance traffic to servers.</li>
+        <li>These can be cloud provider supplied load balancers (e.g. AWS Elastic Load Balancer) or load balancers that you provision.
+        
+        <ul>
+        <li>Dell Cloud Manager provides enhanced functions for cloud provider supplied load balancers.</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li><p><strong>IP Addresses</strong></p>
+        
+        <ul>
+        <li>Manage static IP addresses which can then be assigned to running servers.
+        
+        <ul>
+        <li>Reserve, Assign, Release and Delete</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Networks</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Networks page displays the virtual networks</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All networks across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The networks list is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Add Network</strong> - create a new virtual network in the cloud.</li>
+        <li><strong>View Information</strong> - display information on the virtual network and subnets.</li>
+        <li><strong>Edit Subnets</strong> - add and delete subnets.</li>
+        <li><strong>Remove</strong> - delete the virtual network.</li>
+        </ul>
+        
+        
+        <p></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Networks</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Display virtual network information</strong>
+        <img src="images/display_virtual_network_info.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Firewalls</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Firewalls page displays the Firewalls</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All firewalls across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The firewalls list is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Add Firewall</strong> - create a new Firewall.</li>
+        <li><strong>Edit Rules</strong> - add and remove Firewall rules.</li>
+        <li><strong>Duplicate</strong> - copy the Firewall in order to create a new Firewall.</li>
+        <li><strong>Remove</strong> - delete the Firewall.</li>
+        </ul>
+        
+        
+        <p></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Firewalls</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Edit a Firewall</strong>
+        <img src="images/edit_firewall_01.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Load Balancers</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console Load Balancer page displays the cloud provider's platform-as-a-service Load Balancers</strong></h4>
+        
+        <p></p>
+        
+        
+        <p>(e.g. Amazon Web Services Elastic Load Balancer)</p>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All Load Balancers across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The list of Load Balancers is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Add Load Balancer</strong> - create a new Load Balancer.</li>
+        <li><strong>Manage Servers</strong> - add and remove servers to the list of servers being served by the Load Balancer.</li>
+        <li><strong>Manage Zones</strong> - add and remove zones to the Load Balancer.</li>
+        <li><strong>View Listeners</strong> - display the Load Balancer listeners.</li>
+        <li><strong>Remove</strong> - delete the Load Balancer.</li>
+        </ul>
+        
+        
+        <p></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Load Balancers</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Create a Load Balancer</strong>
+        <img src="images/create_load_balancer.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Load Balancers</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Manage the list of servers being serviced by the Load Balancer</strong>
+        <img src="images/mange_load_balancer_servers.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>IP Addresses</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The Dell Cloud Manager console IP Addresses page displays the available Public IP Addresses</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>All IP Addresses across all Cloud Accounts and Regions (that the user has access to) are aggregated into a single list.</li>
+        <li>The list of IP addresses is sortable and filterable.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>These tasks can be performed providing the user has the necessary access rights:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>Reserve IP Address</strong> - reserve a static IP address to be available for assigning to a server.</li>
+        <li><strong>Assign</strong> - assign the static IP address to a server.</li>
+        <li><strong>Release</strong> - remove the static IP address from a server.</li>
+        <li><strong>Remove</strong> - delete the static IP address.</li>
+        </ul>
+        
+        
+        <p></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>IP Addresses</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Assign a static IP address to a server</strong>
+        <img src="images/assign_static_ip.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>IP Addresses</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Release a static IP address from a server</strong>
+        <img src="images/release_static_ip.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Network - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Create a firewall</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Networking > Firewalls</strong></li>
+        <li>Click <strong>Add Firewall</strong> and supply the following information:
+        
+        <ul>
+        <li>Name</li>
+        <li>Account</li>
+        <li>Region</li>
+        <li>Budget</li>
+        </ul>
+        </li>
+        <li>Click <strong>Launch Firewall</strong> and wait for it to be created.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Add firewall rules</strong></h4>
+        
+        <ul>
+        <li>Select the Firewall and in the <strong>Rules</strong> pane, click <strong>Add Rule</strong></li>
+        <li>Supply the following information to add 3 rules to the firewall. DCM Agent communication from the DCM Server (port 3302), SSH access from your PC (port 22) and Web access from your PC (port 80).
+        
+        <ul>
+        <li><strong>DCM Agent</strong>
+        
+        <ul>
+        <li>Source Type - CIDR</li>
+        <li>Source - Custom</li>
+        <li>CIDR - DCM_Server_IP/32</li>
+        <li>Destination Type - Global</li>
+        <li>Method - Custom</li>
+        <li>Protocol - TCP</li>
+        <li>Start Port - 3302</li>
+        <li>End Port - 3302</li>
+        <li>Permission - Allow</li>
+        <li>Rule direction - Ingress</li>
+        </ul>
+        </li>
+        <li><strong>SSH</strong>
+        
+        <ul>
+        <li>Source Type - CIDR</li>
+        <li>Source - Custom</li>
+        <li>CIDR - Your_IP/32</li>
+        <li>Destination Type - Global</li>
+        <li>Method - Standard Secure Shell Port</li>
+        <li>Permission - Allow</li>
+        <li>Rule direction - Ingress</li>
+        </ul>
+        </li>
+        <li><strong>Web</strong>
+        
+        <ul>
+        <li>Source Type - CIDR</li>
+        <li>Source - Custom</li>
+        <li>CIDR - Your_IP/32</li>
+        <li>Destination Type - Global</li>
+        <li>Method - HTTP Port</li>
+        <li>Permission - Allow</li>
+        <li>Rule direction - Ingress</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Agent</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Agent</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>The DCM Agent is composed of a lightweight tomcat application used for communicating with the Dell Cloud Manager server and a set of associated shell scripts.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>The shell scripts are responsible for executing actions on the server and are extensible by end users.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Installing the DCM agent opens the server to the full functionality provided by DCM including user management, configuration management using Chef or Puppet and logging.</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>The agent also automates actions such as attaching, formatting, encrypting, and mounting volumes as part of a fully automated deployment.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>The DCM Agent functions in both 32-bit and 64-bit environments and runs on:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>GNU/Linux distributions such as: Ubuntu, Debian, Cent OS, and Fedora</li>
+        <li>Windows Server 2003/2008.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>The agent listens on port 2003 and takes action based on user input as in the case of adding a user to a system (</strong>addUser<strong> script).</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>Communication to and from the Dell Cloud Manager provisioning server is encrypted using SSL.</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>The DCM agent and the associated scripts can be found in </strong>/enstratus<strong> on a GNU/Linux system, and in </strong>C:\enstratus<strong> on a Windows server.</strong></h4>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Agent Scripts</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Agent scripts are designed to be extended and customized.</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>The scripts located in </strong>/enstratus/bin<strong> directory (linux) and </strong>c:\enstratus\bin<strong> directory (Windows) are not designed to be edited directly as these scripts are overwritten during an upgrade.</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>Instead, use the </strong>/enstratus/custom/bin<strong> and </strong>c:\enstratus\custom\bin<strong> directories to run custom scripts before, in place of, and/or after the provided scripts.</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>To run a script before the default DCM agent script, place a script called $scriptName</strong>-pre<strong> in the </strong>/enstratus/custom/bin<strong> directory.</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>To run a script in place of the default DCM agent script, place a script of the same name in the </strong>/enstratus/custom/bin<strong> directory.</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>To run a script after the default DCM agent script, place a script called $scriptName</strong>-post<strong> in the </strong>/enstratus/custom/bin<strong> directory</strong>.</h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>For example, to modify the </strong>addUser<strong> script do the following:</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><strong>/enstratus/custom/bin/addUser</strong>      - if exists, will completely replace this script</li>
+        <li><strong>/enstratus/custom/bin/addUser-pre</strong>  - if exists, will be executed before this script</li>
+        <li><strong>/enstratus/custom/bin/addUser-post</strong> - if exists, will be executed after this script</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Agent</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Display the Dell Cloud Manager Agent Log</strong>
+        <img src="images/agent_log.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Agent</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Create a user account on the running server</strong>
+        <img src="images/shell_admin_access.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>DCM Agent - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Launch a new server</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Design > Machine Images</strong></li>
+        <li>On the <strong>Search Public Library</strong> tab, search for the following Image
+        
+        <ul>
+        <li>ubuntu/images/ebs/ubuntu-precise-12.04-amd64-server-20140717</li>
+        </ul>
+        </li>
+        <li>Click <strong>Launch</strong></li>
+        <li>Provide the following information:
+        
+        <ul>
+        <li>Server Name</li>
+        <li>Budget</li>
+        <li>Product - m1.small</li>
+        </ul>
+        </li>
+        <li>On the <strong>Create Keys</strong> tab, click to <strong>Generate a new key pair</strong> (or select an existing pair if you have already created one)
+        
+        <ul>
+        <li>Record the key, you will not be able to retrieve this value later.</li>
+        </ul>
+        </li>
+        <li>On the <strong>Network, Firewalls &amp; Static IP</strong> tab, select the firewall created in the previous lab exercise.</li>
+        <li>Click <strong>Deploy Server</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Install the agent</strong></h4>
+        
+        <ul>
+        <li>ssh to the server using the key generated above</li>
+        <li>Change to root by running
+        
+        <ul>
+        <li><code>sudo su - root</code></li>
+        </ul>
+        </li>
+        <li>Install the agent by running
+        
+        <ul>
+        <li><code>curl -L http://es-download.s3.amazonaws.com/install.sh | bash -s - -c Amazon -p DCM_Server_IP:3302 -e staging</code></li>
+        </ul>
+        </li>
+        <li>Monitor the output and wait for the installation to complete.</li>
+        <li>Start the agent and watch the log as it starts
+        
+        <ul>
+        <li><code>/etc/init.d/tomcat-enstratus start &amp;&amp; tail -f /enstratus/ws/tomcat/logs/catalina.out</code></li>
+        </ul>
+        </li>
+        <li>Check the log for a successful handshake and initialisation</li>
+        <li>Check the <strong>Servers</strong> page in the DCM console for an icon in the Agent column.</li>
+        <li>Click the <strong>View Logs</strong> link for the server and check that there are no errors reported.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Make an image of the server</strong></h4>
+        
+        <ul>
+        <li>Click <strong>Make Image</strong> and supply the following:
+        
+        <ul>
+        <li>Name</li>
+        </ul>
+        </li>
+        <li>Navigate to the <strong>Design > Machine Images</strong> page and check the details of the new image
+        
+        <ul>
+        <li>Ensure that the agent is registered in the inage - there should be a value in the Agent column.</li>
+        <li>If the agent is not registered in the image, it can be registered manually by clicking the <strong>Edit Machine Image</strong> link.</li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Launch a new server from the agent image</strong></h4>
+        
+        <ul>
+        <li>There is no need to supply a key pair</li>
+        <li>Configure a 1Gb volume to attach at launch - note that more options are available to select</li>
+        <li>Once the server has launched, the agent should start automatically and begin communicating with DCM.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Grant user access to the server</strong></h4>
+        
+        <ul>
+        <li>Highlight the server and click <strong>Edit Server</strong></li>
+        <li>On the <strong>User Management</strong> tab, select your account and the level of access and click <strong>Grant Access</strong></li>
+        <li>Note the value in the <strong>Login</strong> column - this is the username that will be created on the server</li>
+        <li>Click <strong>Update Server</strong> and review the Agent Logs again.</li>
+        <li>Try and log on to the server using the Login username and ssh key in your user profile.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Verify volume configuration</strong></h4>
+        
+        <ul>
+        <li>Issue the <code>mount</code> command</li>
+        <li>The volume will have been attached to the server, formatted and mounted to the specification above.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Tidying Up</strong></h4>
+        
+        <ul>
+        <li>Tidy up by terminating any running servers</li>
+        <li>Do <strong>not</strong> delete the machine image with the agent installed, it will be needed for future lab exercises.</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Configuration Management Integration</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Configuration Management Integration</h1>
+        
+        <p></p>
+        
+        
+        <p>Configuration Management</p>
+        
+        <h4><strong>Dell Cloud Manager supports two configuration management systems: </strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>1. Chef</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>Chef is a configuration management tool created by Opscode</li>
+        <li><p>Dell Cloud Manager supports version 0.10.x of these three current types of Chef servers:</p>
+        
+        <ul>
+        <li>Hosted Chef (OHC)</li>
+        <li>Open Source Chef (OSC)</li>
+        <li>Private Chef (OPC)</li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <h4><strong>2. Puppet</strong></h4>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li>Puppet is a configuration management tool created by PuppetLabs.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>A machine image with the DCM Agent pre-installed is a requirement for launching servers with configuration management. </strong></h4>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Configuration Management Integration</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Adding a Chef Account</strong>
+        <img src="images/chef_01.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Configuration Management Integration</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Chef Environment</strong>
+        <img src="images/chef_02.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Configuration Management Integration</h1>
+        
+        <p></p>
+        
+        
+        <p><strong>Performing a Chef run at server launch</strong>
+        <img src="images/chef_03.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Configuration Management (Chef) - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Launch a new server with Configuration Management</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Design > Machine Images</strong></li>
+        <li>Locate the machine image with the agent installed and click <strong>Launch Server</strong></li>
+        <li>On the <strong>Provide Server Details</strong> tab, supply the following information
+        
+        <ul>
+        <li>Name</li>
+        <li>Product - m1.small</li>
+        </ul>
+        </li>
+        <li>On the <strong>Network, Firewalls &amp; Static IP</strong> tab:
+        
+        <ul>
+        <li>Firewalls - the firewall you created in the Networks Lab with ssh (22), DCM Agent (3302) and http (80) ports open</li>
+        </ul>
+        </li>
+        <li>On the <strong>Configuration Management</strong> tab supply:
+        
+        <ul>
+        <li>Configuration Management Account - The Chef Account</li>
+        <li>Environment - _default</li>
+        <li>Cookbooks - dcm-apache2</li>
+        <li>Recipes - dcm-apache2</li>
+        <li>The <strong>Run List</strong> should consist of <code>dcm-apache2 : dcm-apache2</code></li>
+        </ul>
+        </li>
+        <li>Click <strong>Deploy Server</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Check the Agent Logs</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Deployed > Servers</strong></li>
+        <li>Locate the server and click <strong>View Logs</strong>
+        
+        <ul>
+        <li>Check the output for <code>ConfigureServerWithChef</code> and <code>runConfigureManagement-CHEF</code></li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Connect to the web server</strong></h4>
+        
+        <ul>
+        <li>Locate the IP address of the server</li>
+        <li>In a web browser, browse to http://ip_address
+        
+        <ul>
+        <li>The default apache2 web page should be displayed</li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Tidying Up</strong></h4>
+        
+        <ul>
+        <li>Tidy up by terminating any running servers</li>
+        <li>Do <strong>not</strong> delete the machine image with the agent installed, it will be needed for future lab exercises.</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Dell Cloud Manager Jobs</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Jobs</h1>
+        
+        <p></p>
+        
+        
+        <p>Dell Cloud Manager creates jobs for many of the actions issued from the console especially those that request services from the cloud:</p>
+        
+        <ul>
+        <li><strong>Launching and terminating servers</strong></li>
+        <li><strong>Making images</strong></li>
+        <li><strong>Creating and modifying firewalls</strong></li>
+        <li><strong>Creating volumes</strong></li>
+        <li><strong>Attaching volumes</strong></li>
+        <li><strong>Creating snapshots</strong></li>
+        <li>etc. etc.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <p>You can display the status of the jobs from the Dell Cloud Manager console <strong>Job History</strong> page.</p>
+        
+        <ul>
+        <li><strong>Description</strong> - the action requested from the console.</li>
+        <li><strong>Status</strong> - example statuses: Running, Error, Complete.</li>
+        <li><strong>Message</strong> - contains a status message for the job. It will contain an error message if the job failed. For some actions it will contain a "resource" identifier.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <p>Failed jobs are highlighted in red and marked <em>*Attention required...</em></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Display Pending Jobs</h1>
+        
+        <p></p>
+        
+        
+        <p>To display the Job History click on the Console <strong>View all Job History</strong> menu item next to the username.</p>
+        
+        <p><img src="images/display_jobs.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Users, Groups and Roles</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Overview</h1>
+        
+        <p></p>
+        
+        
+        <h3><strong>Dell Cloud Manager User Management is tightly integrated with Dell Cloud Manager companies, accounts, groups, roles and access rights.</strong></h3>
+        
+        <p></p>
+        
+        
+        <h3>Companies</h3>
+        
+        <ul>
+        <li><p>A Company in Dell Cloud Manager is a logical entity that contains one or more accounts.</p></li>
+        <li><p>The Company name is required when the first account for the company is created.</p></li>
+        </ul>
+        
+        
+        <h3>Accounts</h3>
+        
+        <ul>
+        <li><p>An account has a one-to-one relationship with a a set of cloud credentials that are tied to a cloud provider.</p></li>
+        <li><p>Multiple users in DCM can be associated with one account.</p></li>
+        </ul>
+        
+        
+        <h3>Users</h3>
+        
+        <ul>
+        <li><p>Users are linked with each individual who logs in to Dell Cloud Manager.</p></li>
+        <li><p>Users can be linked to one or more accounts.</p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Overview</h1>
+        
+        <p></p>
+        
+        
+        <h3>Access Rights</h3>
+        
+        <ul>
+        <li><p>Define what resources can be accessed.</p></li>
+        <li><p>Define what actions can be performed against those resources.</p></li>
+        </ul>
+        
+        
+        <h3>Roles</h3>
+        
+        <ul>
+        <li><p>Roles contain a set of access rights.</p></li>
+        <li><p>Visible company wide</p></li>
+        </ul>
+        
+        
+        <h3>Groups</h3>
+        
+        <ul>
+        <li><p>A Group is the key central security component of Dell Cloud Manager.</p></li>
+        <li><p>All users are assigned to at least one group, but can be assigned to several groups.</p></li>
+        <li><p>A group can contain zero or one role. However if a group does not have a role then the group does not provide any access rights.</p></li>
+        <li><p>Group to Role mappings are performed at the account level</p></li>
+        </ul>
+        
+        
+        <h3>Note:</h3>
+        
+        <ul>
+        <li><p>Access rights are cumulative.  If a user is defined to multiple groups the user's access rights will be a cumulation (union) of the access rights from all roles associated with those groups.</p></li>
+        <li><p>User and Group management can be performed by an external source such as an LDAP directory, Microsoft Active Directory etc. Access rights management and group to role mapping must be performed within DCM.</p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Setting a role for a group</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Setting a role for a group</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p>A group can only have one role assigned to it.</p></li>
+        <li><p>After a new group is created there are no roles assigned to it.</p>
+        
+        <ul>
+        <li>If a group does not have a role then the group does not provide any permissions.</li>
+        </ul>
+        </li>
+        <li><p>A Role can have zero or more access rights assigned to it.</p></li>
+        <li><p>After a new role is created the role does not have any access rights.</p>
+        
+        <ul>
+        <li>If a role does not have any access rights then it does not provide any permissions to the group.</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Setting a role for a group</h1>
+        
+        <p></p>
+        
+        
+        <p>On the <strong>Groups</strong> tab of the User Access page, click on the "Edit Group" action for the group.</p>
+        
+        <p><img src="images/set_role_in_group_01.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Setting a role for a group</h1>
+        
+        <p></p>
+        
+        
+        <p>On the <strong>Role Assignments</strong> tab use the dropdowns to select the required role for each cloud account</p>
+        
+        <p></p>
+        
+        
+        <p>In this example, all members of this group will be granted the Admin role for the Openstack account, the Basic User role for the AWS account and no role (and therefore no permission) for the AWS-2 account</p>
+        
+        <p><img src="images/set_role_in_group_02.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Creating a role</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p>Roles contain a set of access rights which define what resources can be accessed and what actions can be performed against those resources.</p></li>
+        <li><p>After a new role has been created it does not have any access rights.</p>
+        
+        <ul>
+        <li>If a role does not have any access rights then it does not provide any permissions to the group.</li>
+        </ul>
+        </li>
+        <li><p>To create a role the following information is needed:</p>
+        
+        <ul>
+        <li>Name</li>
+        <li>Description</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Creating a Role</h1>
+        
+        <p></p>
+        
+        
+        <p>Click on the "Add Role" link on the <strong>Roles</strong> tab of the User Access page.</p>
+        
+        <p><img src="images/create_role_01.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Creating Access Rights</h1>
+        
+        <p></p>
+        
+        
+        <p>Access rights define what resources can be accessed and what actions can be performed against those resources.</p>
+        
+        <p>Access rights are composed of the following 3 items: <strong>Resource</strong>, <strong>Policy</strong> and <strong>Qualifier</strong>.</p>
+        
+        <p></p>
+        
+        
+        <h4><strong>Resource</strong></h4>
+        
+        <p></p>
+        
+        
+        <p>Every page, link and action in the Dell Cloud Manager console is controlled by at least one resource. For example:</p>
+        
+        <ul>
+        <li>Access to the actions available on the Design > Machine Images page is controlled by the <strong>IMAGE</strong> resource</li>
+        <li>Access to the actions available on the Deployed > Servers page is controlled by the <strong>SERVER</strong> resource.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Policy</strong></h4>
+        
+        <p></p>
+        
+        
+        <p>Resources are further controlled by policies.</p>
+        
+        <ul>
+        <li>To allow the users to perform all actions against a resource specify the <strong>Full Access</strong> policy.</li>
+        <li>To grant more granular permissions select the specific policy to allow the users to perform.</li>
+        <li>For example, to allow the users to be able to start existing servers specify the <strong>Start</strong> policy for that resource.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <p>Some console actions require multiple resource-action pairs.</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Creating Access Rights</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Qualifier</strong></h4>
+        
+        <p></p>
+        
+        
+        <p>There are four Qualifiers available when creating an access right: <strong>ANY</strong>, <strong>GROUP</strong>, <strong>BILLING</strong>, and <strong>MINE</strong>.</p>
+        
+        <p>Only one Qualifier per access right can be selected.</p>
+        
+        <p></p>
+        
+        
+        
+        
+        <p></p>
+        
+        
+        <p>To explain how the Qualifier works assume we are creating an Access Right to allow users to make an image of a server.</p>
+        
+        <ul>
+        <li>The Resource in the Access Right is <strong>Server</strong>.</li>
+        <li>The Policy in the Access Right is <strong>Image</strong> (make an image of a server).</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        
+        
+        <p></p>
+        
+        
+        <p>Now applying the 5 different Qualifiers to the Access Right:</p>
+        
+        <ul>
+        <li><p><strong>ANY</strong> - users with this access right can make an image of any server.</p></li>
+        <li><p><strong>GROUP</strong> - users with this access right can make an image of any server owned by a group that they are a member of.</p></li>
+        <li><p><strong>BILLING</strong> - users with this access right can make an image of any server owned by a budget code that has been assigned to them.</p></li>
+        <li><p><strong>MINE</strong> - users with this access right can make an image of any server that they own (servers they have launched).</p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Assigning access rights</h1>
+        
+        <p></p>
+        
+        
+        <p>Click on the "Edit Access Rights" link for the role and complete the form.</p>
+        
+        <p><img src="images/create_role_02.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Users, Groups and Roles - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Create a new Role</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Users &amp; Accounts > User Access</strong></li>
+        <li>On the <strong>Roles</strong> tab, click the <strong>Add Role</strong> link</li>
+        <li>Supply a Name and Description and click <strong>Create Role</strong></li>
+        <li>Highlight the new role and click <strong>Edit Access Rights</strong></li>
+        <li>Set the following access rights
+        
+        <ul>
+        <li>Click <strong>Apply Full Access</strong></li>
+        <li>Uncheck the Account resource</li>
+        <li>Server resource - Access:Any; everything else :Mine</li>
+        </ul>
+        </li>
+        <li>Click <strong>Save Changes</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Create a new Group</strong></h4>
+        
+        <ul>
+        <li>Click the <strong>Groups</strong> tab</li>
+        <li>Click <strong>Add Group</strong> and select the following
+        
+        <ul>
+        <li>Name</li>
+        <li>Description</li>
+        <li>Role Assignments - assign the new role to the cloud account</li>
+        <li>Budget Assignments - assign the default budget to the cloud account</li>
+        </ul>
+        </li>
+        <li>Click <strong>Create Group</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Create a new User</strong></h4>
+        
+        <ul>
+        <li>Click the <strong>Users</strong> tab</li>
+        <li>Click <strong>Add User</strong> and supply the following
+        
+        <ul>
+        <li>Email Address - it does not have to be a real one</li>
+        <li>Password</li>
+        <li>First Name</li>
+        <li>Last Name</li>
+        <li>User Groups - assign the user to the new group from above</li>
+        </ul>
+        </li>
+        <li>Click <strong>Create User</strong></li>
+        <li>Highlight the user account and review <strong>Effective Account -> Role Relationships</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Test user access rights</strong></h4>
+        
+        <ul>
+        <li>In a new browser session, log on to DCM as the new user</li>
+        <li>Browse around the console
+        
+        <ul>
+        <li>what is missing?</li>
+        <li>try to reboot an existing server</li>
+        <li>launch a new server and try to reboot it.</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Budgets</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p>Dell Cloud Manager provides the ability to track and control your costs incurred in the cloud.</p></li>
+        <li><p>Dell Cloud Manager tracks infrastructure costs based on the costs reported by the cloud provider or in the case of an on-premise installation of Dell Cloud Manager, against a customizable set of values.</p></li>
+        <li><p>Dell Cloud Manager calculates costs based on the hourly run rate for usage.</p></li>
+        <li><p>Servers, storage, load balancers, and IP Addresses are all examples of items that have an associated cost in many of the public clouds.</p></li>
+        <li><p>Budgets can be setup quickly and easily from Dell Cloud Manager by creating <strong>Budget Codes</strong> containing soft and hard quotas.</p></li>
+        <li><p>The Budgets Codes are then used to track and control your expenses in the cloud.</p>
+        
+        <ul>
+        <li>Soft quotas generate notification warnings.</li>
+        <li>Hard quotas prevent further activity.</li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Overview</h1>
+        
+        <p></p>
+        
+        
+        <ul>
+        <li><p>Budget Codes are created and associated with your various cloud resources to track and control their associated costs.</p>
+        
+        <ul>
+        <li>Servers, images, volumes, load balancers, IP addresses, etc.</li>
+        </ul>
+        </li>
+        <li><p>Budget Codes are associated with user groups at the account level.</p>
+        
+        <ul>
+        <li>Therefore users can bill to different Budget Codes depending on the cloud account they are operating in.</li>
+        </ul>
+        </li>
+        <li><p>The costs incurred are used to calculate a run rate and project costs.</p>
+        
+        <ul>
+        <li>Run Rate - is the calculated usage per hour costs for all of the infrastructure being tracked against this code.</li>
+        <li>Current Rate - is the total charges tracked against the billing code up to the current point in the month.</li>
+        <li>Projected Usage - is the projected total usage costs for the month based on the current run rate.</li>
+        </ul>
+        </li>
+        <li><p>If multiple cloud providers are used, Dell Cloud Manager will gather the expenses from the multiple cloud providers and aggregate them in the Budget Codes.</p></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Creating a Budget</h1>
+        
+        <p></p>
+        
+        
+        <p>Click on the "Add Budget" link on the Budget Management page</p>
+        
+        <p><img src="images/create_budget_01.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Assigning a budget code to a group</h1>
+        
+        <p></p>
+        
+        
+        <p>On the Groups tab of the User Access page click the "Edit Group" link for the group to be assigned the budget. On the Budget Assignments tab, associate the budget with the desired cloud account.</p>
+        
+        <p><img src="images/create_budget_02.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Budgets - Lab</h1>
+        
+        <p></p>
+        
+        
+        <h4><strong>Create a new Budget</strong></h4>
+        
+        <ul>
+        <li>As the admin user, navigate to <strong>Budgets &amp; Reports > Budget Management</strong></li>
+        <li>Click <strong>Add Budget</strong></li>
+        <li>Supply the following
+        
+        <ul>
+        <li>Name</li>
+        <li>Description</li>
+        <li>Budget Code</li>
+        <li>Soft Quota - 0.10</li>
+        <li>Hard Quota - 1.00</li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Assign the budget code to a group</strong></h4>
+        
+        <ul>
+        <li>Navigate to <strong>Users &amp; Accounts > User Access</strong></li>
+        <li>Click the <strong>Groups</strong> tab</li>
+        <li>Highlight the Administrators group and click <strong>Edit Group</strong></li>
+        <li>On the <strong>Budget Assignments</strong> tab, assign the new budget to the cloud account</li>
+        <li>Click <strong>Update Group</strong></li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <h4><strong>Launch a server against the new budget code</strong></h4>
+        
+        <p></p>
+        
+        
+        <h4><strong>Review budget usage</strong></h4>
+        
+        <ul>
+        <li>Return to the <strong>Budgets &amp; Reports > Budget Management</strong> page</li>
+        <li>Check the hourly run rate and current usage values (note that it can take some time for the values to update)</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <!-- deck.js navigation extension -->
+    <a class='deck-prev-link' href='#' title='Previous'>&#8592;</a>
+    <a class='deck-next-link' href='#' title='Next'>&#8594;</a>
+    <!-- deck.js hash extension -->
+    <a class='deck-permalink' href='.' title='Permalink to this slide'>#</a>
+    <!-- deck.js status extension -->
+    <p class='deck-status'>
+      <span class='deck-status-current'></span>
+      /
+      <span class='deck-status-total'></span>
+    </p>
+    <!-- jQuery & deck.js -->
+    <script src="deck.js/support/jquery.1.6.4.min.js" type="text/javascript"></script>
+    <script src="deck.js/core/deck.core.js" type="text/javascript"></script>
+    <!-- deck.js extension JS files -->
+    <script src="deck.js/extensions/codemirror/codemirror.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/deck.codemirror.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/clike/clike.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/clojure/clojure.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/coffeescript/coffeescript.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/css/css.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/diff/diff.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/haskell/haskell.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/htmlmixed/htmlmixed.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/javascript/javascript.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/lua/lua.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/php/php.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/plsql/plsql.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/python/python.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/r/r.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/rst/rst.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/ruby/ruby.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/scheme/scheme.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/smalltalk/smalltalk.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/sparql/sparql.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/stex/stex.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/velocity/velocity.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/xml/xml.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/xmlpure/xmlpure.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/yaml/yaml.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/goto/deck.goto.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/hash/deck.hash.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/menu/deck.menu.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/navigation/deck.navigation.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/scale/deck.scale.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/status/deck.status.js" type="text/javascript"></script>
+    <!-- your custom JS here, including call to initialize deck.js-codemirror -->
+    <!-- Initialize the deck. -->
+    <script type='text/javascript'>
+      $(function() { $.deck('.slide'); });
+    </script>
+  </body>
+</html>
