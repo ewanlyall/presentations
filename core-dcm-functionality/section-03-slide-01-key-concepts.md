@@ -1,6 +1,6 @@
-!SLIDE
+!SLIDE left
 # DCM Concepts and Key Terminology
-
+<p></p>
 * Dell Cloud Manager provides single pane of glass for multi-cloud management, this means...
   * DCM must absract some concepts - an AZ in openstack is mapped to a DCM region(?)
   * not all features are supported by all clouds
