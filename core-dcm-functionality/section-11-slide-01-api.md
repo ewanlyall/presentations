@@ -1,7 +1,7 @@
 !SLIDE left
 # API
 <p></p>
-The Dell Cloud Manager REST API gives end users programatic access to all the features that are avalable through the user interface.
+The Dell Cloud Manager REST API gives end users programatic access to most features that are avalable through the user interface. This allows existing applications or third-party tools to make authenticated calls against DCM.
 
 * Access to create API keys is governed by RBAC
 * Similarly, API keys have the same set of permissions as the user would have if they were logged into the console
