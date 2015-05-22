@@ -9,6 +9,7 @@ The Dell Cloud Manager REST API gives end users programatic access to all the fe
  
 <p></p>
 
-There are two different types of API key, **User Keys** and **Account Keys**.
-  * **User Keys** - have access to the same cloud accounts and resources as the user
-  * **Account Keys** - are limited to use within a single cloud account
+There are two different types of API key, **User Keys** and **Account Keys**
+
+* **User Keys** - have access to the same cloud accounts and resources as the user
+* **Account Keys** - are limited to use within a single cloud account
