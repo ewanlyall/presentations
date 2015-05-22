@@ -24,7 +24,7 @@
 
 * GNU/Linux distributions such as: Ubuntu, Debian, Cent OS, and Fedora
 * Windows Server 2003/2008/2012
-  * Note that the DCM Agent for Windows is currently being re-written, the legacy Java agent should be used instead.
+  * Note that the DCM Agent for Windows is currently under re-development, the legacy Java agent should be used instead.
 
 <p></p>
 
