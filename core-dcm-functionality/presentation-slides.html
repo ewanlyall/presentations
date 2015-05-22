@@ -1356,6 +1356,20 @@
     <section class='left slide'>
       <div class='spacer top'></div>
       <div class='content'>
+        <h1>How User Management Ties Together</h1>
+        
+        <p></p>
+        
+        
+        <p>This diagram shows the relationship between customers, cloud accounts, groups, roles and users.</p>
+        
+        <p><img src="images/Customers-Accounts-Roles-Groups-Users.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
         <h1>Setting a role for a group</h1>
         
         <p></p>
@@ -1380,7 +1394,7 @@
         <p></p>
         
         
-        <p>In this example, all members of this group will be granted the Admin role for the Openstack account, the Basic User role for the AWS account and no role (and therefore no permission) for the AWS-2 account</p>
+        <p>In this example, all members of this group will be granted the Basic User role for the "Amazon Web Services" account and no role (and therefore no permission) for the "Amazon Web Services 1" account</p>
         
         <p><img src="images/set_role_in_group_02.png" height="1050" width="1200"></p>
       </div>
@@ -1847,7 +1861,7 @@
         <li>Windows Server 2003/2008/2012
         
         <ul>
-        <li>Note that the DCM Agent for Windows is currently being re-written, the legacy Java agent should be used instead.</li>
+        <li>Note that the DCM Agent for Windows is currently under re-development, the legacy Java agent should be used instead.</li>
         </ul>
         </li>
         </ul>
@@ -1883,27 +1897,27 @@
         <p></p>
         
         
-        <h4><strong>The scripts located in </strong>/opt/dcm-agent/scripts<strong> directory (linux) and </strong>c:\enstratus\bin<strong> directory (Windows) are not designed to be edited directly as these scripts are overwritten during an upgrade.</strong></h4>
+        <h4><strong>The scripts located in </strong>/dcm/bin<strong> directory (linux) and </strong>c:\enstratus\bin<strong> directory (Windows) are not designed to be edited directly as these scripts are overwritten during an upgrade.</strong></h4>
         
         <p></p>
         
         
-        <h4><strong>Instead, use the </strong>/opt/dcm-agent/custom/scripts<strong> and </strong>c:\enstratus\custom\bin<strong> directories to run custom scripts before, in place of, and/or after the provided scripts.</strong></h4>
+        <h4><strong>Instead, use the </strong>/dcm/custom/bin<strong> and </strong>c:\enstratus\custom\bin<strong> directories to run custom scripts before, in place of, and/or after the provided scripts.</strong></h4>
         
         <p></p>
         
         
-        <h4><strong>To run a script before the default DCM agent script, place a script called $scriptName</strong>-pre<strong> in the </strong>/opt/dcm-agent/custom/scripts<strong> directory.</strong></h4>
+        <h4><strong>To run a script before the default DCM agent script, place a script called $scriptName</strong>-pre<strong> in the </strong>/dcm/custom/bin<strong> directory.</strong></h4>
         
         <p></p>
         
         
-        <h4><strong>To run a script in place of the default DCM agent script, place a script of the same name in the </strong>/opt/dcm-agent/custom/scripts<strong> directory.</strong></h4>
+        <h4><strong>To run a script in place of the default DCM agent script, place a script of the same name in the </strong>/dcm/custom/bin<strong> directory.</strong></h4>
         
         <p></p>
         
         
-        <h4><strong>To run a script after the default DCM agent script, place a script called $scriptName</strong>-post<strong> in the </strong>/opt/dcm-agent/custom/scripts<strong> directory</strong>.</h4>
+        <h4><strong>To run a script after the default DCM agent script, place a script called $scriptName</strong>-post<strong> in the </strong>/dcm/custom/bin<strong> directory</strong>.</h4>
         
         <p></p>
         
@@ -1914,9 +1928,9 @@
         
         
         <ul>
-        <li><strong>/opt/dcm-agent/custom/scripts/addUser</strong>      - if exists, will completely replace this script</li>
-        <li><strong>/opt/dcm-agent/custom/scripts/addUser-pre</strong>  - if exists, will be executed before this script</li>
-        <li><strong>/opt/dcm-agent/custom/scripts/addUser-post</strong> - if exists, will be executed after this script</li>
+        <li><strong>/dcm/custom/bin/addUser</strong>      - if exists, will completely replace this script</li>
+        <li><strong>/dcm/custom/bin/addUser-pre</strong>  - if exists, will be executed before this script</li>
+        <li><strong>/dcm/custom/bin/addUser-post</strong> - if exists, will be executed after this script</li>
         </ul>
       </div>
       <div class='spacer bottom'></div>
@@ -2317,6 +2331,81 @@
         <p>To display the Job History click on the Console <strong>View all Job History</strong> menu item next to the username.</p>
         
         <p><img src="images/display_jobs.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>The Dell Cloud Manager API</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>API</h1>
+        
+        <p></p>
+        
+        
+        <p>The Dell Cloud Manager REST API gives end users programatic access to all the features that are avalable through the user interface.</p>
+        
+        <ul>
+        <li>Access to create API keys is governed by RBAC</li>
+        <li>Similarly, API keys have the same set of permissions as the user would have if they were logged into the console</li>
+        <li>API keys can be set to expire after a period of time, and will automatically expire if the user's account is disabled.</li>
+        </ul>
+        
+        
+        <p></p>
+        
+        
+        <p>There are two different types of API key, <strong>User Keys</strong> and <strong>Account Keys</strong>.
+          * <strong>User Keys</strong> - have access to the same cloud accounts and resources as the user
+          * <strong>Account Keys</strong> - are limited to use within a single cloud account</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Create a set of User API Keys</h1>
+        
+        <p></p>
+        
+        
+        <p>From the <strong>API Key Management</strong> screen, click Add Key
+        <img src="images/create_api_key.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Create a set of User API Keys</h1>
+        
+        <p></p>
+        
+        
+        <p>Record the details and keep them safe!
+        <img src="images/create_api_key_02.png" height="1050" width="1200"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>API</h1>
+        
+        <p></p>
+        
+        
+        <p>The Dell Cloud Manager REST API gives end users programatic access to all the features that are avalable through the user interface.</p>
+        
+        <p>mixcoatl.......</p>
+        
+        <p></p>
       </div>
       <div class='spacer bottom'></div>
     </section>
