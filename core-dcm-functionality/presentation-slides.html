@@ -2438,6 +2438,9 @@
         </ul>
         
         
+        <p></p>
+        
+        
         <p>Further to this, mixcoatl is a python wrapper for the DCM API. It is opensource and available publicly at https://github.com/enStratus/mixcoatl. Mixcoatl provides 2 methods for interacting with the API:</p>
         
         <ul>
@@ -2448,18 +2451,17 @@
         
         <p>Note that there is currently no support from Dell for mixcoatl, but you are welcome to fork and contribute.</p>
         
-        <p>Mixcoatl can be installed with <code>pip install -U mixcoatl</code>, set some environment variables:</p>
-        
-        <p><code>export ES_ACCESS_KEY=<your api access key></code>
-        <code>export ES_SECRET_KEY=<your api secret key></code>
-        <code>export ES_ENDPOINT=https://<dcm_server_url>/api/enstratus/2015-04-27</code>
-        <code>export ES_API_VERSION=2015-04-27</code></p>
-        
-        <p>Then, for example, list all servers with</p>
-        
-        <p><code>dcm-list-servers</code>
-        or
-        <code>dcm-get infrastructure/Server</code></p>
+        <p>To use mixcoatl:
+        * install with <code>pip install -U mixcoatl</code>
+        * set some environment variables:
+          * <code>export ES_ACCESS_KEY=<your api access key></code>
+          * <code>export ES_SECRET_KEY=<your api secret key></code>
+          * <code>export ES_ENDPOINT=https://<dcm_server_url>/api/enstratus/2015-04-27</code>
+          * <code>export ES_API_VERSION=2015-04-27</code>
+        * Then, for example, list all servers with:
+          * <code>dcm-list-servers</code>
+        * or
+          * <code>dcm-get infrastructure/Server</code></p>
       </div>
       <div class='spacer bottom'></div>
     </section>
